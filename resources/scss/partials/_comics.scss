@@ -16,6 +16,7 @@ section.comics {
 
         article {
             width: calc((100% / 6) - 1rem);
+            color: $main-text-color;
 
             img.comic-thumb {
                 width: 100%;
@@ -23,6 +24,12 @@ section.comics {
                 object-fit: cover;
                 object-position: top;
                 margin-bottom: 1rem;
+            }
+
+            p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: .8rem;
+                text-transform: uppercase;
             }
         }
     }
