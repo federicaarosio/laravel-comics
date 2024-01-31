@@ -1,0 +1,14 @@
+@import "./variables";
+
+img.logo {
+    width: 50px;
+}
+
+ul {
+    text-transform: uppercase;
+
+    li.active {
+        color: $accent;
+    }
+}
+

@@ -1,1 +1,14 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/variables";
+
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
