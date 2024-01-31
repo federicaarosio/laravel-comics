@@ -4,16 +4,15 @@
 header {
     background-color: $header-bg-color;
     margin-top: 15px;
+}
 
-    div.wrapper {
-        @include flex(row, space-between, center);
-        width: 1100px;
-        margin: 0 auto;
-        padding: 1rem;
-        font-size: .8rem;
-        text-transform: uppercase;
-    }
-
+section.navigation {
+    @include flex(row, space-between, center);
+    width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: .8rem;
+    text-transform: uppercase;
 }
 
 img.logo {
@@ -27,4 +26,14 @@ ul {
         color: $accent;
     }
 }
+
+section.jumbo {
+    // da sistemare
+    background: url('../img/jumbotron.jpg'); 
+    background-size: cover;
+    height: 20rem;
+}
+
+
+
 
