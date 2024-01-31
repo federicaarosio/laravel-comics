@@ -1,7 +1,23 @@
 @import "./variables";
+@import "./mixins";
+
+header {
+    background-color: $header-bg-color;
+    margin-top: 15px;
+
+    div.wrapper {
+        @include flex(row, space-between, center);
+        width: 1100px;
+        margin: 0 auto;
+        padding: 1rem;
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+
+}
 
 img.logo {
-    width: 50px;
+    width: 70px;
 }
 
 ul {

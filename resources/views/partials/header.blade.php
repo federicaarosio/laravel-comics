@@ -1,5 +1,5 @@
 <header>
-    <div class="wrapper d-flex container justify-content-between align-items-center my-3">
+    <div class="wrapper">
         <div class="logo">
             <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC logo" class="logo">
         </div>
