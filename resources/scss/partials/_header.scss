@@ -6,7 +6,7 @@ header {
     margin-top: 15px;
 }
 
-section.navigation {
+section.header-navigation {
     @include flex(row, space-between, center);
     width: 1100px;
     margin: 0 auto;
@@ -19,7 +19,7 @@ img.logo {
     width: 70px;
 }
 
-ul {
+ul.navigation-menu {
     text-transform: uppercase;
 
     li.active {

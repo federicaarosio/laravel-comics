@@ -1,10 +1,10 @@
 <header>
-    <section class="navigation">
+    <section class="header-navigation">
         <div class="logo">
             <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC logo" class="logo">
         </div>
         <nav class="navigation">
-            <ul class="d-flex gap-4">
+            <ul class="d-flex gap-4 navigation-menu">
                 <li>Characters</li>
                 <li class="active">Comics</li>
                 <li>Movies</li>

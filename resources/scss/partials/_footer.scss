@@ -1,0 +1,96 @@
+@import "./variables";
+@import "./mixins";
+
+footer {
+    background-image: url(../img/footer-bg.jpg);
+
+    section.upper-footer {
+        @include flex(row, space-between, center);
+        height: 100%;
+        width: 1100px;
+        margin: 0 auto;
+
+        section.navigation-footer {
+            width: 40%;
+            @include flex(column, start, start);
+        }
+
+        .columns-wrapper {
+            @include flex(row, start, start);
+            gap: 4rem;
+
+            h1.footer-title {
+                color: $main-text-color;
+                text-transform: uppercase;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 1rem 0;
+                font-size: 1rem;
+            }
+
+            ul {
+                padding-left: 0;
+
+                li {
+                    font-size: .7rem;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: $small-text-color;
+                    // margin-bottom: .7rem;
+                }
+            }
+        }
+
+        section.footer-logo {
+            height: 100%;
+
+            img {
+                overflow: hidden;
+                width: 400px;
+            }
+        }
+    }
+
+    section.lower-footer {
+        background-color: $footer-bg-color;
+
+        div.wrapper {
+            width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 0;
+            @include flex(row, space-between, center);
+
+            button.sign-up {
+                background-color: transparent;
+                border: 2px solid $accent;
+                color: $main-text-color;
+                font-size: .8rem;
+                font-weight: bold;
+                padding: .8rem 1.2rem;
+                text-transform: uppercase;
+
+            }
+
+            div.socials {
+                @include flex(row, end, center);
+                div.follow-us {
+                    color: $accent;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-right: 1rem;
+
+                }
+
+                div.icon {
+                    margin-right: 1rem;
+                    color: $footer-bg-color;
+                    background-color: $small-text-color;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    @include flex(row, center, center)
+                }
+            }
+
+        }
+    }
+}
