@@ -2,14 +2,28 @@
 
 @section('main-content')
 <section class="comics">
+
     <div class="comics-container">
 
-        @foreach ($comics as $comic)
-            <article>
-                <img src="{{ $comic['thumb'] }}" alt="comic thumb" class="comic-thumb">
-                <p>{{ $comic['series'] }}</p>
-            </article>
-        @endforeach
+        <span class="tag">
+            Current series
+        </span>
+
+        <div class="article-container">
+            @foreach ($comics as $comic)
+                <article>
+                    <img src="{{ $comic['thumb'] }}" alt="comic thumb" class="comic-thumb">
+                    <p>{{ $comic['series'] }}</p>
+                </article>
+            @endforeach
+        </div>
+
+        <div class="button-wrapper">
+            <button>
+                Load more
+            </button> 
+        </div>
+
     </div>
 </section>
 <section class="pre-footer">
