@@ -6,7 +6,7 @@
 
         @foreach ($comics as $comic)
             <article>
-                <img src="{{ $comic['thumb'] }}" alt="">
+                <img src="{{ $comic['thumb'] }}" alt="comic thumb" class="comic-thumb">
                 <p>{{ $comic['series'] }}</p>
             </article>
         @endforeach
