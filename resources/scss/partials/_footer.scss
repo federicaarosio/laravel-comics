@@ -3,17 +3,38 @@
 
 footer {
     background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 
     section.upper-footer {
         @include flex(row, space-between, center);
         height: 100%;
         width: 1100px;
         margin: 0 auto;
+        font-size: .7rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: $small-text-color;
+        padding: 2rem 0;
+        position: relative;
+
 
         section.navigation-footer {
             width: 40%;
             @include flex(column, start, start);
+            
+
+            .dc-logo-overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                overflow: hidden;
+                height: 100%;
+            }
         }
+
+       
 
         .columns-wrapper {
             @include flex(row, start, start);
@@ -23,20 +44,12 @@ footer {
                 color: $main-text-color;
                 text-transform: uppercase;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                margin: 1rem 0;
                 font-size: 1rem;
             }
+        }
 
-            ul {
-                padding-left: 0;
-
-                li {
-                    font-size: .7rem;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    color: $small-text-color;
-                    // margin-bottom: .7rem;
-                }
-            }
+        span {
+            color: $accent;
         }
 
         section.footer-logo {
@@ -47,6 +60,9 @@ footer {
                 width: 400px;
             }
         }
+
+
+
     }
 
     section.lower-footer {

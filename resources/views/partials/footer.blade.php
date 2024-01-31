@@ -1,6 +1,9 @@
 <footer>
     <section class="upper-footer">
+
         <section class="navigation-footer">
+            <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" class="dc-logo-overlay">
+
             <div class="columns-wrapper">
                 <div class="column">
                     <h1 class="footer-title">
