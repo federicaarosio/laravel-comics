@@ -34,3 +34,28 @@ section.comics {
         }
     }
 }
+
+section.pre-footer {
+    background-color: $accent;
+    min-height: 20px;
+
+    .banner-container {
+        @include flex(row, center, center);
+        gap: 2rem;
+        padding: 2rem 0;
+
+        div.wrapper {
+            @include flex(row, center, center);
+            gap: 1rem;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: .8rem;
+            text-transform: uppercase;
+
+            img {
+                height: 50px;
+                max-width: 50px;
+            }
+        }
+    }
+}

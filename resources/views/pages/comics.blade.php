@@ -10,7 +10,30 @@
                 <p>{{ $comic['series'] }}</p>
             </article>
         @endforeach
-
+    </div>
+</section>
+<section class="pre-footer">
+    <div class="banner-container">
+        <div class="wrapper">
+            <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
+            <p>Digital comics</p>
+        </div>
+        <div class="wrapper">
+            <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="merchandise">
+            <p>DC merchandise</p>
+        </div>
+        <div class="wrapper">
+            <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="subscription">
+            <p>Subscription</p>
+        </div>
+        <div class="wrapper">
+            <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="shop locator">
+            <p>Comic shop locator</p>
+        </div>
+        <div class="wrapper">
+            <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="visa">
+            <p>DC power visa</p>
+        </div>
     </div>
 </section>
 @endsection
