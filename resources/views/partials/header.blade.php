@@ -1,5 +1,5 @@
 <header>
-    <div class="wrapper">
+    <section class="navigation">
         <div class="logo">
             <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC logo" class="logo">
         </div>
@@ -21,5 +21,7 @@
             <input type="text" placeholder="Search">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-    </div>
+    </section>
+    <section class="jumbo">
+    </section>
 </header>

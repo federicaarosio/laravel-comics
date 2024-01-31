@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./mixins";
+
+section.comics {
+    background-color: $bg-color;
+    min-height: 580px;
+
+    div.comics-container{
+        width: 1100px;
+        margin: 0 auto;
+        @include flex(row, center, stretch);
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-top: 4rem;
+        margin-bottom: 3rem;
+    }
+}
