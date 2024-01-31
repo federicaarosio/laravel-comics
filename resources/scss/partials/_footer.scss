@@ -6,7 +6,6 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
 
     section.upper-footer {
         @include flex(row, space-between, center);
@@ -18,6 +17,8 @@ footer {
         color: $small-text-color;
         padding: 2rem 0;
         position: relative;
+        overflow: hidden;
+
 
 
         section.navigation-footer {
@@ -27,10 +28,10 @@ footer {
 
             .dc-logo-overlay {
                 position: absolute;
-                top: 0;
+                top: -30%;
                 right: 0;
                 overflow: hidden;
-                height: 100%;
+                // height: 100%;
             }
         }
 
